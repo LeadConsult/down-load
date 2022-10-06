@@ -2,11 +2,11 @@
 #include "lists.h"
 
 /**
- * sub_handler - handles  sub instruction
+ * sub_handller - handles  sub instruction
  * @stack: double pointer to  stack to push to
  * @line_number: number of  line in  file
  */
-void sub_handler(stack_t **stack, unsigned int line_number)
+void sub_handller(stack_t **stack, unsigned int line_number)
 {
 	int sub = 0;
 	stack_t *node = NULL;
@@ -33,11 +33,11 @@ void sub_handler(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * div_handler - handles  div instruction
+ * div_handller - handles  div instruction
  * @stack: double pointer to  stack to push to
  * @line_number: number of  line in  file
  */
-void div_handler(stack_t **stack, unsigned int line_number)
+void div_handller(stack_t **stack, unsigned int line_number)
 {
 	int div = 0;
 	stack_t *node = NULL;
@@ -71,11 +71,11 @@ void div_handler(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * mul_handler - handles  mul instruction
+ * mul_handller - handles  mul instruction
  * @stack: double pointer to  stack to push to
  * @line_number: number of  line in  file
  */
-void mul_handler(stack_t **stack, unsigned int line_number)
+void mul_handller(stack_t **stack, unsigned int line_number)
 {
 	int mul = 0;
 	stack_t *node = NULL;
@@ -102,11 +102,11 @@ void mul_handler(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * mod_handler - handles  mod instruction
+ * mod_handller - handles  mod instruction
  * @stack: double pointer to  stack to push to
  * @line_number: number of  line in  file
  */
-void mod_handler(stack_t **stack, unsigned int line_number)
+void mod_handller(stack_t **stack, unsigned int line_number)
 {
 	int mod = 0;
 	stack_t *node = NULL;

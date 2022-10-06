@@ -2,11 +2,11 @@
 #include "lists.h"
 
 /**
- * rotl_handler - handles  rotl instruction
+ * rotl_handller - handles  rotl instruction
  * @stack: double pointer to  stack to push to
  * @line_number: number of  line in  file
  */
-void rotl_handler(stack_t **stack, unsigned int line_number)
+void rotl_handller(stack_t **stack, unsigned int line_number)
 {
 	stack_t *temp = *stack;
 	int num  = 0;
@@ -22,11 +22,11 @@ void rotl_handler(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * rotr_handler - handles  rotr instruction
+ * rotr_handller - handles  rotr instruction
  * @stack: double pointer to  stack to push to
  * @line_number: number of  line in  file
  */
-void rotr_handler(stack_t **stack, unsigned int line_number)
+void rotr_handller(stack_t **stack, unsigned int line_number)
 {
 	stack_t *temp = *stack;
 	int num = 0, len = dlistint_len(*stack);
@@ -42,11 +42,11 @@ void rotr_handler(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * stack_handler - handles  stack instruction
+ * stack_handller - handles  stack instruction
  * @stack: double pointer to  stack to push to
  * @line_number: number of  line in  file
  */
-void stack_handler(stack_t **stack, unsigned int line_number)
+void stack_handller(stack_t **stack, unsigned int line_number)
 {
 	(void)stack;
 	(void)line_number;
@@ -55,11 +55,11 @@ void stack_handler(stack_t **stack, unsigned int line_number)
 
 
 /**
- * queue_handler - handles  queue instruction
+ * queue_handller - handles  queue instruction
  * @stack: double pointer to  stack to push to
  * @line_number: number of  line in  file
  */
-void queue_handler(stack_t **stack, unsigned int line_number)
+void queue_handller(stack_t **stack, unsigned int line_number)
 {
 	(void)stack;
 	(void)line_number;

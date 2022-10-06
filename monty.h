@@ -98,31 +98,31 @@ void monty(args_t *args);
 
 /* get_func.c */
 void (*get_func(char **parsed))(stack_t **, unsigned int);
-void push_handler(stack_t **stack, unsigned int line_number);
-void pall_handler(stack_t **stack, unsigned int line_number);
+void push_handller(stack_t **stack, unsigned int line_number);
+void pall_handller(stack_t **stack, unsigned int line_number);
 
-/* handler_funcs1.c */
-void pint_handler(stack_t **stack, unsigned int line_number);
-void pop_handler(stack_t **stack, unsigned int line_number);
-void swap_handler(stack_t **stack, unsigned int line_number);
-void add_handler(stack_t **stack, unsigned int line_number);
-void nop_handler(stack_t **stack, unsigned int line_number);
+/* handller_funcs1.c */
+void pint_handller(stack_t **stack, unsigned int line_number);
+void pop_handller(stack_t **stack, unsigned int line_number);
+void swap_handller(stack_t **stack, unsigned int line_number);
+void add_handller(stack_t **stack, unsigned int line_number);
+void nop_handller(stack_t **stack, unsigned int line_number);
 
-/* handler_funcs2.c */
-void sub_handler(stack_t **stack, unsigned int line_number);
-void div_handler(stack_t **stack, unsigned int line_number);
-void mul_handler(stack_t **stack, unsigned int line_number);
-void mod_handler(stack_t **stack, unsigned int line_number);
+/* handller_funcs2.c */
+void sub_handller(stack_t **stack, unsigned int line_number);
+void div_handller(stack_t **stack, unsigned int line_number);
+void mul_handller(stack_t **stack, unsigned int line_number);
+void mod_handller(stack_t **stack, unsigned int line_number);
 
-/* handler_funcs3.c */
-void rotl_handler(stack_t **stack, unsigned int line_number);
-void rotr_handler(stack_t **stack, unsigned int line_number);
-void stack_handler(stack_t **stack, unsigned int line_number);
-void queue_handler(stack_t **stack, unsigned int line_number);
+/* handller_funcs3.c */
+void rotl_handller(stack_t **stack, unsigned int line_number);
+void rotr_handller(stack_t **stack, unsigned int line_number);
+void stack_handller(stack_t **stack, unsigned int line_number);
+void queue_handller(stack_t **stack, unsigned int line_number);
 
 /* char.c */
-void pchar_handler(stack_t **stack, unsigned int line_number);
-void pstr_handler(stack_t **stack, unsigned int line_number);
+void pchar_handller(stack_t **stack, unsigned int line_number);
+void pstr_handller(stack_t **stack, unsigned int line_number);
 
 /* strtow.c */
 int count_word(char *s);
