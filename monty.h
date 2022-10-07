@@ -10,8 +10,8 @@
 /**
  * struct stack_s - doubly linked list representation of a stack (or queue)
  * @n: integer
- * @prev: points to  previous element of  stack (or queue)
- * @next: points to  next element of  stack (or queue)
+ * @prev: points to the previous element of the stack (or queue)
+ * @next: points to the next element of the stack (or queue)
  *
  * Description: doubly linked list node structure
  * for stack, queues, LIFO, FIFO Holberton project
@@ -25,8 +25,8 @@ typedef struct stack_s
 
 /**
  * struct instruction_s - opcode and its function
- * @opcode:  opcode
- * @f: function to handle  opcode
+ * @opcode: the opcode
+ * @f: function to handle the opcode
  *
  * Description: opcode and its function
  * for stack, queues, LIFO, FIFO Holberton project
@@ -39,11 +39,11 @@ typedef struct instruction_s
 
 /**
  * struct args_s - structure of arguments from main
- * @av: name of  file from  command line
+ * @av: name of the file from the command line
  * @ac: number of arguments from main
- * @line_number: number of  current line in  file
+ * @line_number: number of the current line in the file
  *
- * Description: arguments passed to main from  command line
+ * Description: arguments passed to main from the command line
  * used in different functions, organized in a struct for clarity
  */
 typedef struct args_s
@@ -55,9 +55,9 @@ typedef struct args_s
 
 /**
  * struct data_s - extern data to access inside functions
- * @line: line from  file
+ * @line: line from the file
  * @words: parsed line
- * @stack: pointer to  stack
+ * @stack: pointer to the stack
  * @fptr: file pointer
  * @qflag: flag for queue or stack
  */
@@ -98,31 +98,31 @@ void monty(args_t *args);
 
 /* get_func.c */
 void (*get_func(char **parsed))(stack_t **, unsigned int);
-void push_handller(stack_t **stack, unsigned int line_number);
-void pall_handller(stack_t **stack, unsigned int line_number);
+void push_handler(stack_t **stack, unsigned int line_number);
+void pall_handler(stack_t **stack, unsigned int line_number);
 
-/* handller_funcs1.c */
-void pint_handller(stack_t **stack, unsigned int line_number);
-void pop_handller(stack_t **stack, unsigned int line_number);
-void swap_handller(stack_t **stack, unsigned int line_number);
-void add_handller(stack_t **stack, unsigned int line_number);
-void nop_handller(stack_t **stack, unsigned int line_number);
+/* handler_funcs1.c */
+void pint_handler(stack_t **stack, unsigned int line_number);
+void pop_handler(stack_t **stack, unsigned int line_number);
+void swap_handler(stack_t **stack, unsigned int line_number);
+void add_handler(stack_t **stack, unsigned int line_number);
+void nop_handler(stack_t **stack, unsigned int line_number);
 
-/* handller_funcs2.c */
-void sub_handller(stack_t **stack, unsigned int line_number);
-void div_handller(stack_t **stack, unsigned int line_number);
-void mul_handller(stack_t **stack, unsigned int line_number);
-void mod_handller(stack_t **stack, unsigned int line_number);
+/* handler_funcs2.c */
+void sub_handler(stack_t **stack, unsigned int line_number);
+void div_handler(stack_t **stack, unsigned int line_number);
+void mul_handler(stack_t **stack, unsigned int line_number);
+void mod_handler(stack_t **stack, unsigned int line_number);
 
-/* handller_funcs3.c */
-void rotl_handller(stack_t **stack, unsigned int line_number);
-void rotr_handller(stack_t **stack, unsigned int line_number);
-void stack_handller(stack_t **stack, unsigned int line_number);
-void queue_handller(stack_t **stack, unsigned int line_number);
+/* handler_funcs3.c */
+void rotl_handler(stack_t **stack, unsigned int line_number);
+void rotr_handler(stack_t **stack, unsigned int line_number);
+void stack_handler(stack_t **stack, unsigned int line_number);
+void queue_handler(stack_t **stack, unsigned int line_number);
 
 /* char.c */
-void pchar_handller(stack_t **stack, unsigned int line_number);
-void pstr_handller(stack_t **stack, unsigned int line_number);
+void pchar_handler(stack_t **stack, unsigned int line_number);
+void pstr_handler(stack_t **stack, unsigned int line_number);
 
 /* strtow.c */
 int count_word(char *s);

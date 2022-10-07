@@ -1,8 +1,8 @@
 #include "monty.h"
 
 /**
- * dlistint_len - returns  number of nodes in a doubly linked list
- * @h: pointer to  list
+ * dlistint_len - returns the number of nodes in a doubly linked list
+ * @h: pointer to the list
  *
  * Return: number of nodes
  */
@@ -23,11 +23,11 @@ size_t dlistint_len(const dlistint_t *h)
 }
 
 /**
- * add_dnodeint - adds a new node at  beginning of a doubly linked list
- * @head: double pointer to  list
- * @n: data to insert in  new node
+ * add_dnodeint - adds a new node at the beginning of a doubly linked list
+ * @head: double pointer to the list
+ * @n: data to insert in the new node
  *
- * Return:  address of  new element, or NULL if it failed
+ * Return: the address of the new element, or NULL if it failed
  */
 dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 {
@@ -55,9 +55,9 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 
 /**
  * print_dlistint - prints a doubly linked list
- * @h: pointer to  list
+ * @h: pointer to the list
  *
- * Return: number of nodes in  list
+ * Return: number of nodes in the list
  */
 size_t print_dlistint(const dlistint_t *h)
 {
@@ -79,8 +79,8 @@ size_t print_dlistint(const dlistint_t *h)
 /**
  * delete_dnodeint_at_index - deltes a node in a doubly linked list
  * at a given index
- * @head: double pointer to  list
- * @index: index of  node to delete
+ * @head: double pointer to the list
+ * @index: index of the node to delete
  *
  * Return: 1 on success, -1 on failure
  */
@@ -116,11 +116,11 @@ int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 }
 
 /**
- * get_dnodeint_at_index - gets  nth node of a doubly linked list
- * @head: pointer to  list
- * @index: index of  node to return
+ * get_dnodeint_at_index - gets the nth node of a doubly linked list
+ * @head: pointer to the list
+ * @index: index of the node to return
  *
- * Return: address of  node, or if it does not exist, NULL
+ * Return: address of the node, or if it does not exist, NULL
  */
 dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 {

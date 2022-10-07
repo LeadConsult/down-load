@@ -7,9 +7,9 @@ data_t data = DATA_INIT;
  * monty - helper function for main function
  * @args: pointer to struct of arguments from main
  *
- * Description: opens and reads from  file
- * containing  opcodes, and calls  function
- * that will find  corresponding executing function
+ * Description: opens and reads from the file
+ * containing the opcodes, and calls the function
+ * that will find the corresponding executing function
  */
 void monty(args_t *args)
 {

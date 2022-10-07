@@ -2,11 +2,11 @@
 #include "lists.h"
 
 /**
- * pchar_handller - handles  pchar instruction
- * @stack: double pointer to  stack to push to
- * @line_number: number of  line in  file
+ * pchar_handler - handles the pchar instruction
+ * @stack: double pointer to the stack to push to
+ * @line_number: number of the line in the file
  */
-void pchar_handller(stack_t **stack, unsigned int line_number)
+void pchar_handler(stack_t **stack, unsigned int line_number)
 {
 	stack_t *node = *stack;
 
@@ -29,11 +29,11 @@ void pchar_handller(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * pstr_handller - handles  pstr instruction
- * @stack: double pointer to  stack to push to
- * @line_number: number of  line in  file
+ * pstr_handler - handles the pstr instruction
+ * @stack: double pointer to the stack to push to
+ * @line_number: number of the line in the file
  */
-void pstr_handller(stack_t **stack, unsigned int line_number)
+void pstr_handler(stack_t **stack, unsigned int line_number)
 {
 	stack_t *node = *stack;
 

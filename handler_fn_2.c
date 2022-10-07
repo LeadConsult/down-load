@@ -2,11 +2,11 @@
 #include "lists.h"
 
 /**
- * sub_handller - handles  sub instruction
- * @stack: double pointer to  stack to push to
- * @line_number: number of  line in  file
+ * sub_handler - handles the sub instruction
+ * @stack: double pointer to the stack to push to
+ * @line_number: number of the line in the file
  */
-void sub_handller(stack_t **stack, unsigned int line_number)
+void sub_handler(stack_t **stack, unsigned int line_number)
 {
 	int sub = 0;
 	stack_t *node = NULL;
@@ -33,11 +33,11 @@ void sub_handller(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * div_handller - handles  div instruction
- * @stack: double pointer to  stack to push to
- * @line_number: number of  line in  file
+ * div_handler - handles the div instruction
+ * @stack: double pointer to the stack to push to
+ * @line_number: number of the line in the file
  */
-void div_handller(stack_t **stack, unsigned int line_number)
+void div_handler(stack_t **stack, unsigned int line_number)
 {
 	int div = 0;
 	stack_t *node = NULL;
@@ -71,11 +71,11 @@ void div_handller(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * mul_handller - handles  mul instruction
- * @stack: double pointer to  stack to push to
- * @line_number: number of  line in  file
+ * mul_handler - handles the mul instruction
+ * @stack: double pointer to the stack to push to
+ * @line_number: number of the line in the file
  */
-void mul_handller(stack_t **stack, unsigned int line_number)
+void mul_handler(stack_t **stack, unsigned int line_number)
 {
 	int mul = 0;
 	stack_t *node = NULL;
@@ -102,11 +102,11 @@ void mul_handller(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * mod_handller - handles  mod instruction
- * @stack: double pointer to  stack to push to
- * @line_number: number of  line in  file
+ * mod_handler - handles the mod instruction
+ * @stack: double pointer to the stack to push to
+ * @line_number: number of the line in the file
  */
-void mod_handller(stack_t **stack, unsigned int line_number)
+void mod_handler(stack_t **stack, unsigned int line_number)
 {
 	int mod = 0;
 	stack_t *node = NULL;

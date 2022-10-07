@@ -2,11 +2,11 @@
 #include "lists.h"
 
 /**
- * rotl_handller - handles  rotl instruction
- * @stack: double pointer to  stack to push to
- * @line_number: number of  line in  file
+ * rotl_handler - handles the rotl instruction
+ * @stack: double pointer to the stack to push to
+ * @line_number: number of the line in the file
  */
-void rotl_handller(stack_t **stack, unsigned int line_number)
+void rotl_handler(stack_t **stack, unsigned int line_number)
 {
 	stack_t *temp = *stack;
 	int num  = 0;
@@ -22,11 +22,11 @@ void rotl_handller(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * rotr_handller - handles  rotr instruction
- * @stack: double pointer to  stack to push to
- * @line_number: number of  line in  file
+ * rotr_handler - handles the rotr instruction
+ * @stack: double pointer to the stack to push to
+ * @line_number: number of the line in the file
  */
-void rotr_handller(stack_t **stack, unsigned int line_number)
+void rotr_handler(stack_t **stack, unsigned int line_number)
 {
 	stack_t *temp = *stack;
 	int num = 0, len = dlistint_len(*stack);
@@ -42,11 +42,11 @@ void rotr_handller(stack_t **stack, unsigned int line_number)
 }
 
 /**
- * stack_handller - handles  stack instruction
- * @stack: double pointer to  stack to push to
- * @line_number: number of  line in  file
+ * stack_handler - handles the stack instruction
+ * @stack: double pointer to the stack to push to
+ * @line_number: number of the line in the file
  */
-void stack_handller(stack_t **stack, unsigned int line_number)
+void stack_handler(stack_t **stack, unsigned int line_number)
 {
 	(void)stack;
 	(void)line_number;
@@ -55,11 +55,11 @@ void stack_handller(stack_t **stack, unsigned int line_number)
 
 
 /**
- * queue_handller - handles  queue instruction
- * @stack: double pointer to  stack to push to
- * @line_number: number of  line in  file
+ * queue_handler - handles the queue instruction
+ * @stack: double pointer to the stack to push to
+ * @line_number: number of the line in the file
  */
-void queue_handller(stack_t **stack, unsigned int line_number)
+void queue_handler(stack_t **stack, unsigned int line_number)
 {
 	(void)stack;
 	(void)line_number;
