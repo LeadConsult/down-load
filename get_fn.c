@@ -2,7 +2,7 @@
 #include "lists.h"
 
 /**
- * get_func - selects  right function
+ * get_func - selects right function
  * @parsed: line from  bytecode file passed to main
  *
  * Return: pointer to  selected function, or NULL on failure
