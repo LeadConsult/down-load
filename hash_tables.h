@@ -8,12 +8,12 @@
 /**
  * struct shash_node_s - Node of a sorted hash table
  *
- * @key: The key, string
- * The key is unique in the HashTable
- * @value: The value corresponding to a key
- * @next: A pointer to the next node of the List
- * @sprev: A pointer to the previous element of the sorted linked list
- * @snext: A pointer to the next element of the sorted linked list
+ * @key:  key, string
+ *  key is unique in  HashTable
+ * @value:  value corresponding to a key
+ * @next: A pointer to  next node of  List
+ * @sprev: A pointer to  previous element of  sorted linked list
+ * @snext: A pointer to  next element of  sorted linked list
  */
 typedef struct shash_node_s
 {
@@ -27,12 +27,12 @@ typedef struct shash_node_s
 /**
  * struct shash_table_s - Sorted hash table data structure
  *
- * @size: The size of the array
+ * @size:  size of  array
  * @array: An array of size @size
- * Each cell of this array is a pointer to the first node of a linked list,
+ * Each cell of this array is a pointer to  first node of a linked list,
  * because we want our HashTable to use a Chaining collision handling
- * @shead: A pointer to the first element of the sorted linked list
- * @stail: A pointer to the last element of the sorted linked list
+ * @shead: A pointer to  first element of  sorted linked list
+ * @stail: A pointer to  last element of  sorted linked list
  */
 typedef struct shash_table_s
 {
@@ -45,10 +45,10 @@ typedef struct shash_table_s
 /**
  * struct hash_node_s - Node of a hash table
  *
- * @key: The key, string
- * The key is unique in the HashTable
- * @value: The value corresponding to a key
- * @next: A pointer to the next node of the List
+ * @key:  key, string
+ *  key is unique in  HashTable
+ * @value:  value corresponding to a key
+ * @next: A pointer to  next node of  List
  */
 typedef struct hash_node_s
 {
@@ -60,9 +60,9 @@ typedef struct hash_node_s
 /**
  * struct hash_table_s - Hash table data structure
  *
- * @size: The size of the array
+ * @size:  size of  array
  * @array: An array of size @size
- * Each cell of this array is a pointer to the first node of a linked list,
+ * Each cell of this array is a pointer to  first node of a linked list,
  * because we want our HashTable to use a Chaining collision handling
  */
 typedef struct hash_table_s
