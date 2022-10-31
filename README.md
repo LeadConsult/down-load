@@ -1,1 +1,1 @@
-This is 0x1A. C - Hash tables task
+This is 0x0C-python-almost_a_circle als task 2022
