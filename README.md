@@ -1,2 +1,1 @@
-This is 0x1B. C - Sorting algorithms & Big O task.
-====================================
+This task is about 0x04-loops_conditions_and_parsing
