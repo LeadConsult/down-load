@@ -1,1 +1,0 @@
-# This is AirBnB CLone Webstatic ALX task
