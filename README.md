@@ -1,7 +1,6 @@
-# 0x1D. C - Binary trees
+# 0x1B.c makefiles
 
-
-## Description
-Binary Tree is defined as a tree data structure where each node has at most 2 children. Since each element in a binary tree can have only 2 children, we typically name them left and right child.
-
-https://www.geeksforgeeks.org/wp-content/uploads/binary-tree-to-DLL.png
+Makefile sets a set of rules to determine which parts of a program need to be recompile,
+and issues command to recompile them. Makefile is a way of automating software building procedure
+and other complex tasks with dependencies.
+Makefile contains: dependency rules, macros and suffix(or implicit) rules.
