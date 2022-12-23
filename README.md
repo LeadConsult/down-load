@@ -1,2 +1,1 @@
-# This is 0x13-javascript_objects_scopes_closures of ALX task
-
+# tHIS IS 0x0F-python-object_relational_mapping ALX TASK
