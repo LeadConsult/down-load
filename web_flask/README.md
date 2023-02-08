@@ -1,1 +1,0 @@
-# This was a sub-project from ALX within AirBnB  on Web Flask
