@@ -1,1 +1,1 @@
-THis is 0x15. API ALX task
+This is 0x14. JavaScript - Web scraping ALX task
