@@ -1,1 +1,1 @@
-This is 0x14. JavaScript - Web scraping ALX task
+This is 0x15-javascript-web_jquery ALX task
