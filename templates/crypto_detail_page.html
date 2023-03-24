@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CryptoPMA - Cryptocurrency Price Monitoring App</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CryptoPMA - Cryptocurrency Price Monitoring App</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+        <main>
+            <h2>Top Cryptocurrencies</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Symbol</th>
+                        <th>Price (USD)</th>
+                        <th>24h Change (%)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for currency in top_currencies %}
+                    <tr>
+                        <td>{{ currency['name'] }}</td>
+                        <td>{{ currency['symbol'] }}</td>
+                        <td>{{ currency['price'] }}</td>
+                        <td>{{ currency['change_24h'] }}</td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </main>
+        <footer>
+            <p>&copy; 2023 CryptoPMA</p>
+        </footer>
+    </div>
+</body>
+</html>
