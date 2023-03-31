@@ -1,43 +1,17 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>CryptoPMA - Cryptocurrency Price Monitoring App</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
-  </head>
-  <body>
-    <header>
-      <h1>CryptoPMA</h1>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <h2>Track Cryptocurrency Prices</h2>
-      <form>
-        <label for="currency">Select a Currency:</label>
-        <select id="currency">
-          <option value="BTC">Bitcoin</option>
-          <option value="ETH">Ethereum</option>
-          <option value="LTC">Litecoin</option>
-          <option value="BCH">Bitcoin Cash</option>
-          <option value="XRP">Ripple</option>
-        </select>
-        <label for="interval">Select an Interval:</label>
-        <select id="interval">
-          <option value="1h">1 Hour</option>
-          <option value="24h">24 Hours</option>
-          <option value="7d">7 Days</option>
-          <option value="30d">30 Days</option>
-        </select>
-        <input type="submit" value="Track Price">
-      </form>
-    </main>
-    <footer>
-      <p>&copy; 2023 CryptoPMA</p>
-    </footer>
-  </body>
-</html>
+{% extends 'base.html' %}
+
+    {% block content %}
+        <h1>{% block title %} Welcome to KidoKlass {% endblock %}</h1>
+
+        {% for post in posts %}
+            <a href="{{ url_for('post', post_id=post['id']) }}">
+                <h2>{{ post['title'] }}</h2>
+            </a>
+            <span class="badge badge-primary">{{ post['created'] }}</span>
+            <a href="{{ url_for('edit', id=post['id']) }}">
+                <span class="badge badge-warning">Edit</span>
+            </a>
+            <hr>
+        {% endfor %}
+   
+    {% endblock %}
